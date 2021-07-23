@@ -20,7 +20,7 @@ Run the following commands in terminal from the root directory of the project
 - Firebase: Authentication, Firestore Database, Storage
 - HTML
 - CSS
-- Vanilla JS
+- Vanilla JS 
 
 ## Sample Output
 ### Landing Page
