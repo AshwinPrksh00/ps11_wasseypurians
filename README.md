@@ -23,6 +23,26 @@ Run the following commands in terminal from the root directory of the project
 - Vanilla JS
 
 ## Sample Output
+### Landing Page
+<img src="outputs/1.png" alt="Landing Page" height="403" width="800"/>  
+
+### Departments
+<img src="outputs/2.png" alt="Departments" height="403" width="800"/>  
+
+### Services
+<img src="outputs/3.png" alt="Services" height="403" width="800"/>  
+
+### Symptom Checker
+<img src="outputs/4.png" alt="Symptom Checker" height="403" width="800"/>  
+
+### Sign in/Sign up
+<img src="outputs/5.png" alt="Signin_up" height="403" width="800"/>  
+
+### Doctor Search
+<img src="outputs/6.png" alt="DoctorSearch" height="403" width="800"/>  
+
+### Chat
+<img src="outputs/7.png" alt="Chat" height="403" width="800"/>  
  
  
 
