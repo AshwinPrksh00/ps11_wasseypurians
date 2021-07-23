@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Doctor’s Door: An instant chatting application for Medical Consultation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+- User authentication using Google
+- View Doctor details
+- Search doctors according to specialization
+- Start instant chatting with a doctor assigned by the system
+- Symptom Checker
 
-## Available Scripts
 
-In the project directory, you can run:
+# How to Run:
 
-### `npm start`
+Run the following commands in terminal from the root directory of the project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm install`  
+`npm start`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Languages and Tools  
+- React JS
+- Firebase: Authentication, Firestore Database, Storage
+- HTML
+- CSS
+- Vanilla JS 
 
-### `npm test`
+## Sample Output
+### Landing Page
+<img src="outputs/1.png" alt="Landing Page" height="403" width="800"/>  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Departments
+<img src="outputs/2.png" alt="Departments" height="403" width="800"/>  
 
-### `npm run build`
+### Services
+<img src="outputs/3.png" alt="Services" height="403" width="800"/>  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Symptom Checker
+<img src="outputs/4.png" alt="Symptom Checker" height="403" width="800"/>  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Sign in/Sign up
+<img src="outputs/5.png" alt="Signin_up" height="403" width="800"/>  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Doctor Search
+<img src="outputs/6.png" alt="DoctorSearch" height="403" width="800"/>  
 
-### `npm run eject`
+### Chat
+<img src="outputs/7.png" alt="Chat" height="403" width="800"/>  
+ 
+ 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
