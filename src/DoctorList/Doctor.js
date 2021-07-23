@@ -51,7 +51,7 @@ const Doctor = () => {
                 <p className=""><strong>Degree:</strong>{Degree}</p>
                 <div>
                   <h4 className="price">${DoctorFees}</h4>
-                  <a href="/instantchat">
+                  <a href="/payment">
                     <Button variant="outlined" color="primary">
                       Chat Now
                     </Button>

@@ -20,7 +20,8 @@ import {
 } from "react-router-dom";
 import Status from "./Status";
 import LandingPage from "./LandingPage/LandingPage";
-
+import  BookingCheckout from "./Payments/BookingCheckout"
+import BookingDone from "./Payments/BookingDone"
 const App = () => {
   const [user, setUser] = useState(null);
   const [authenticated, setAuthenticated] = useState(false);
@@ -90,6 +91,28 @@ const App = () => {
             render={(props) =>
               user ? (
                 <ChatApp user={user} />
+              ) : (
+                <Status user={user} setUser={setUser} />
+              )
+            }
+          />
+          <Route
+            exact
+            path="/payment"
+            render={(props) =>
+              user ? (
+                <BookingCheckout user={user} />
+              ) : (
+                <Status user={user} setUser={setUser} />
+              )
+            }
+          />
+          <Route
+            exact
+            path="/confirm"
+            render={(props) =>
+              user ? (
+                <BookingDone />
               ) : (
                 <Status user={user} setUser={setUser} />
               )
