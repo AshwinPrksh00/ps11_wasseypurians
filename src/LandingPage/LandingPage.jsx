@@ -38,7 +38,7 @@ const Hero = ({ user, setUser }) => {
           </li>
           {user ? (
             <li>
-              <a onClick={handleLogout}  className="nav-links">
+              <a onClick={handleLogout} className="nav-links">
                 Logout
               </a>
             </li>
@@ -69,7 +69,9 @@ const Hero = ({ user, setUser }) => {
           <div className="options-menu">
             <div>
               <i className="fas fa-calendar-check"></i>
-              <a href="https://doctor-door.herokuapp.com/">Book an Appointment</a>
+              <a href="https://doctor-door.herokuapp.com/appointment">
+                Book an Appointment
+              </a>
             </div>
             <div>
               <i className="fas fa-search-plus"></i>
@@ -77,11 +79,18 @@ const Hero = ({ user, setUser }) => {
             </div>
             <div>
               <i className="far fa-hospital"></i>
-              <a href="https://www.google.com/maps/search/hospital+near+me" target="_blank">Check Nearby Hospitals</a>
+              <a
+                href="https://www.google.com/maps/search/hospital+near+me"
+                target="_blank"
+              >
+                Check Nearby Hospitals
+              </a>
             </div>
             <div>
               <i className="fas fa-syringe"></i>
-              <a href="https://www.cowin.gov.in/" target="_blank">Vaccination Timings</a>
+              <a href="https://www.cowin.gov.in/" target="_blank">
+                Vaccination Timings
+              </a>
             </div>
           </div>
         </section>
@@ -94,8 +103,8 @@ const Hero = ({ user, setUser }) => {
               <div className="box">
                 <div className="our-services settings">
                   <div className="icon">
-                    <img src="./images/1.png" alt="images"/>
-                    <img className="fasn" src="./images/ent.png" alt="images"/>
+                    <img src="./images/1.png" alt="images" />
+                    <img className="fasn" src="./images/ent.png" alt="images" />
                   </div>
                   <h4>ENT Specialist</h4>
                   <p>Swimmer's ear | Otosclerosis</p>
@@ -105,7 +114,11 @@ const Hero = ({ user, setUser }) => {
                 <div className="our-services speedup">
                   <div className="icon">
                     <img src="./images/settings1.png" alt="images" />
-                    <img className="fasn" src="./images/baby.png" alt="images"/>
+                    <img
+                      className="fasn"
+                      src="./images/baby.png"
+                      alt="images"
+                    />
                   </div>
                   <h4>Paediatrician</h4>
                   <p> Chickenpox | Conjunctivitis</p>

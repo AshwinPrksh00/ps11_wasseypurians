@@ -18,7 +18,14 @@
   background: #e9e9e9;
   display: flex;
 }
-
+.doctor-checkbox{
+  display: flex;
+  align-items: center;
+}
+.doctor-checkbox label{
+  width:100%;
+  font-size:1rem !important;
+}
 .login .loginContainer {
   padding: 60px;
   margin: auto;

@@ -11,7 +11,7 @@ const Login = () => {
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [hasAccount, setHasAccount] = useState(false);
-
+  const [checkbox, setcheckbox] = useState(false);
   const clearErrors = () => {
     setEmailError("");
     setPasswordError("");
@@ -41,7 +41,13 @@ const Login = () => {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(() => {
-        window.location.replace("/");
+        if (checkbox) {
+          window.location.replace(
+            "https://doctor-door.herokuapp.com/doctorPanel"
+          );
+        } else {
+          window.location.replace("/");
+        }
       })
       .catch((err) => {
         // eslint-disable-next-line default-case
@@ -107,8 +113,20 @@ const Login = () => {
         <div className="btnContainer">
           {hasAccount ? (
             <>
-              <button className="button" onClick={handleLogin}>Sign in</button>
+              <button className="button" onClick={handleLogin}>
+                Sign in
+              </button>
+
               <p>
+                <div className="doctor-checkbox">
+                  <input
+                    checked={checkbox}
+                    onChange={() => setcheckbox(!checkbox)}
+                    type="checkbox"
+                    name="doctor"
+                  ></input>
+                  <label for="doctor">Are Your A Doctor?</label>
+                </div>
                 Don't have an account ?{" "}
                 <span onClick={() => setHasAccount(!hasAccount)}>Signup</span>
               </p>
@@ -121,7 +139,18 @@ const Login = () => {
             </>
           ) : (
             <>
-              <button className="button" onClick={handleSignup}>Sign up</button>
+              <button className="button" onClick={handleSignup}>
+                Sign up
+              </button>
+              <div className="doctor-checkbox">
+                <input
+                  checked={checkbox}
+                  onChange={() => setcheckbox(!checkbox)}
+                  type="checkbox"
+                  name="doctor"
+                ></input>
+                <label for="doctor">Are Your A Doctor?</label>
+              </div>
               <p>
                 Have an account ?{" "}
                 <span onClick={() => setHasAccount(!hasAccount)}>Sign in</span>
@@ -131,7 +160,8 @@ const Login = () => {
               </input>
               <input type="checkbox" name="patient" value="patient">
                 Signup as Patient
-              </input> */},
+              </input> */}
+              ,
             </>
           )}
         </div>
