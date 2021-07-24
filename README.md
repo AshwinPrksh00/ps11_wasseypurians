@@ -5,8 +5,8 @@
 - User authentication using Google
 - View Doctor details
 - Search doctors according to specialization
-- Start instant chatting with a doctor assigned by the system
-- Symptom Checker
+- Start instant chatting with a doctor assigned by the system - https://github.com/dev-2k/firechat_chat_app
+- Symptom Checker - https://github.com/shinjinee/Symptom-Checker
 
 
 # How to Run:
